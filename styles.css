@@ -1,0 +1,3341 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Metronic,Arial,sans-serif;
+}
+
+  
+body{ 
+    background-image:
+    url(imgs/nexus_bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+    width:100%;
+}
+h4{
+    margin-bottom: 5px !important;
+}
+
+.title-container {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.header-title {
+    color:white;
+    font-family: poppins;
+    font-size:20px;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+.hots-logo{
+    height:130px;
+    margin:10px;
+}
+hr{
+    display:none;
+}
+
+.title-container {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.header-title {
+    color:white;
+    font-family: poppins;
+    font-size:50px;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+.search{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.roles{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+}
+
+.roles-showcase{
+    color:white;
+    font-size:30px;
+    font-family:poppins;
+    margin-left:20px;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+.all-icon img{
+    transform: rotate(180deg);
+}
+.filter {
+    margin:0px;
+    display:flex;
+    align-content:center;
+    cursor:pointer;
+    height:110px;
+    width:110px;
+    transform:scale(0.5,0.5);
+    transition: all 0.3s;
+    opacity:0.5
+}
+
+.filter:hover {
+    color:black;
+    opacity:1;
+    transition:0.3s;
+} 
+
+.filter.active {
+    cursor:pointer;
+    transform:scale(0.7,0.7);
+    opacity:1;
+}
+
+
+input {
+    width:200px;
+    padding: 4px;
+    margin:0px;
+    color:#6c3097;
+    background:rgba(255,255,255, 0.6);
+    font-weight: 800;
+    font-size: 13px !important;
+    font-family: Metronic,Arial,sans-serif;
+    opacity:0.8;
+    border-radius: 10px;
+    border:2px solid ;
+    box-shadow:0 0 10px black;
+    transition: all 0.3s;
+    outline:none;
+    text-align: center;
+}
+
+
+.heroes-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    margin:0 15px;
+}
+
+p{
+    display:none;
+}
+
+.mix {
+    display: none;
+    border-radius:50%;
+}
+
+/* ---------- Hero Icons ---------- */
+img.showcase{
+    height:60px;
+}
+.showcase{
+    position:relative;
+    opacity:1;
+    margin:20px;
+    padding:0px;
+    border-radius:50%;
+    box-shadow:0 0 10px #fff;
+    transform: scale(0.8,0.8);
+    transition:0.3s;
+}
+.showcase:hover{
+    opacity:1;
+    border-radius:50%;
+    transform: scale(1,1);
+    box-shadow: 0 0 10px #88b8ff,
+                inset 0 0 6px rgba(51,187,255, 1), 
+                inset 0 0 40px rgba(51,187,255, 1), 
+                      0 0 6px rgba(51,187,255, 1), 
+                      0 0 40px rgba(51,187,255, 1);
+    border: 3px solid #88b8ff;
+    transition:0.3s;
+}
+.upcoming{
+    opacity:0.4;
+}
+/* ---------- Hero Icons End ---------- */
+
+
+
+/* ---------- Modal Control Keys ---------- */
+.carousel-control-prev-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+    height:20px !important;
+    width:20px !important;
+    transition:0.5s !important;
+}
+
+.carousel-control-next-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e") !important;
+    height:20px !important;
+    width:20px !important;
+    transition:0.5s !important;   
+}
+.carousel-control-next, 
+.carousel-control-prev{
+    top: 36% !important;
+    bottom: 36% !important;
+    width:6% !important;
+    border:3px solid rgb(98, 0, 255);
+    transition:0.5s !important;   
+}
+.carousel-control-next{
+    border-right:3px solid transparent;
+    outline: 0 !important;
+    transition: opacity .15s ease !important; 
+    background:linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
+}
+.carousel-control-prev{
+    border-left:3px solid transparent;
+    transition: opacity .15s ease !important;
+    outline: 0 !important;
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
+}
+.carousel-control-next:hover{
+    background:linear-gradient(to right, rgba(98, 0, 255, 0.6),rgb(98, 0, 255));
+    transition:0.5s !important;   
+    border:0 !important;
+}
+.carousel-control-prev:hover{
+    background:linear-gradient(to left, rgba(98, 0, 255, 0.6),rgb(98, 0, 255));
+    transition:0.5s !important;   
+    border:0 !important;
+}
+.close {
+    position: absolute;
+    font-size: 23px !important;
+    outline:0 !important;
+    top:2.5%;
+    right:2.5%;
+    font-weight: 700;
+    line-height: 1;
+    color: white !important;
+    text-shadow: 0px 0px 6px rgb(0, 0, 0) !important;
+    opacity: 1 !important;
+    transition:0.3s;
+}
+.close:hover{
+    color:rgb(98, 0, 255) !important;
+    transition:0.3s;
+}
+/* ---------- Modal Control Keys End ---------- */
+  
+
+/* ---------- Modal ---------- */
+.modal-xl{
+    min-width:0px !important; 
+    max-width:880px !important;
+    height:auto;
+}
+.modal.fade{
+    top:6% !important;
+    padding:0px !important;
+}
+.carousel-inner img {
+    width:100%;
+    height:65vh;
+}
+.modal-header {
+    background: url(https://static.icy-veins.com/images/common/toc-texture-light.jpg?v=2) !important;
+    text-align: center;
+    border:0 !important;
+    box-shadow:0 !important;
+    outline:none !important;
+    padding:0 !important;
+    border-bottom: 2px solid transparent !important;
+    border-image: linear-gradient(to right, #85b9ff,rgb(37, 0, 97)) !important;
+    border-image-slice: 1 !important;
+}
+
+.wow-icon,
+.diablo-icon,
+.ow-icon,
+.sc-icon,
+.hots-icon{
+    position: absolute;
+    top:6%;
+    left:4.5%;
+    height:45px;
+}
+.modal-title{
+    font-size:1.6rem;
+    font-weight: 800;
+    font-family: Metronic,Arial,sans-serif;
+    padding-top:15px;
+    padding-bottom:5px;
+    text-shadow: 0 0 13px #009cff;
+    color:white;
+    text-align: center;
+    border:0 transparent;
+    width: 100%;
+    letter-spacing:1px;
+}
+.subtitle{
+    color: #6cf;
+    text-shadow: 0 0 8px black;
+    font-size:1.3rem; 
+    font-weight: 600;
+    font-family: Metronic,Arial,sans-serif;
+    letter-spacing: 1px;
+}
+
+
+   /* Modals */   
+.modal-content {
+    margin:0 !important;
+    border-radius: 0 !important;
+    /* box-shadow: 0px 0px 10px 0px #777777 !important;*/
+    outline:none !important;
+    z-index: 1060;
+}
+.modal-content:before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+  }
+.modal-content:after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    z-index: -2;
+    filter: blur(22px);
+}
+.modal-content:before,
+.modal-content:after{
+    background: linear-gradient(140deg, #85b9ff,rgb(37, 0, 97),  #ff85f6);
+}
+
+.modal-body{
+    /*box-shadow:0px 0px 22px cyan; */
+    margin:0px !important;
+    padding:0 !important;
+    box-shadow:0 !important;
+    outline:none !important;
+}
+
+.carousel-indicators li{
+    background-color:white  !important;
+    height:3.5px !important;
+    padding:0 7px;
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+    margin-bottom:14px;
+    border:0 !important;
+    border-radius:10px;
+  }
+/* ---------- Modal End ---------- */
+
+
+
+
+/* ---------- Hero Builds ---------- */
+/* ---------- Hero Builds Dropdown ---------- */
+.heroes-build-swapper{
+    position: absolute;
+    padding:0 !important;
+    font-weight: 400;
+    font-size:2rem;
+    right:0%;
+    top: 10%;
+    left:0%;
+    text-align: center;
+}
+.outer-dropdown{
+    margin:0 !important;
+    padding:0 !important;
+    display: flex;
+    justify-content: center;
+}
+button.dropdown{
+    color:rgb(100, 62, 230);
+    background:black;
+    height:45px;
+    width:260px;
+    padding:0 !important;
+    border-radius:15px;
+    transition: 0.5s;
+    border:3px solid rgb(88, 0, 230);
+}
+button.dropdown:hover{
+    color:black;
+    background:rgb(88, 0, 230);
+    transition: 0.5s;
+}
+
+.dropdown{
+    font-size: 1.2rem !important;
+    font-weight: 800 !important;
+}
+button.dropdown i{
+    position: absolute;
+    font-size: 2.3rem;
+    right:64%;
+    top:24%;
+}
+.dropdown-menu button{
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0;
+    padding:10px 10px;
+    width:100%;
+    border:0;
+    color:rgb(65, 65, 65);
+    background:#000;
+    background-size: 3px 23px, 23px 3px;
+    transition: 0.3s;
+}
+.dropdown-menu button:hover,
+.dropdown-menu button.select{
+    color:#fff;
+    background:linear-gradient(to right, #000, rgb(20, 20, 20), rgb(36, 36, 36), rgb(20, 20, 20), #000);
+    transition: 0.3s;
+    text-shadow: 0 0 7px #fff;
+    z-index:1000;
+}
+
+.dropdown-menu{
+    padding: 0 !important;
+    margin: 0 !important;   
+    border:0; 
+}
+.dropdown-menu.show {
+    position: absolute;
+    height:auto;
+    width:180px;
+    top:1% !important;
+    left:45px !important;
+    will-change: transform;
+    background:black;
+    border-radius: 0 20px 20px 20px;
+    display: flex !important;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow-y: auto;
+    height:90px;
+}
+.dropdown-menu.show::-webkit-scrollbar{
+    width: 8px;
+    border-radius: 0 20px 20px 0;
+}
+.dropdown-menu.show::-webkit-scrollbar-thumb{
+    background:rgb(88, 0, 230);
+    border-radius: 0 20px 20px 0;
+    
+}
+/* ---------- Hero Builds Dropdown End ---------- */
+
+.heroes-build{
+    position: absolute;
+    right:0%;
+    top: 26%;
+    width:80%;
+    left:10%;
+    z-index: 10;
+    color: #fff;
+    text-align: center;
+}
+.heroes-build-title{
+    text-align:center;
+    font-size:1.7rem;
+    padding-bottom:2px;
+    font-weight: 700;
+    text-shadow: 0 0 13px #009cff;
+}
+.heroes-build-talents{ 
+    border:0;
+    padding:0px 20px !important;
+    margin:0 !important;
+    display: flex;
+    justify-content: space-between;
+}
+
+.heroes-build-talents img{
+    margin-top:3px;
+    width:60px;
+    height:60px;
+    border-radius:15px;
+    box-shadow:none;
+}
+.build-1 img{
+    border:3px solid #32ac49;
+    box-shadow: 0 0 8px #5bc66e;
+}
+.build-2 img{
+    border:3px solid #3291c6;
+    box-shadow: 0 0 8px #3c93bf;
+}
+.build-3 img{
+    border:3px solid #bd0541;
+    box-shadow:0 0 8px #fc6790;
+}
+.build-4 img{
+    border:3px solid  #b6b009;
+    box-shadow:0 0 8px #fefc83;
+}
+
+.heroes-build-talent-tier{
+    display: inline-block;
+    width: 13%;
+    text-align: center;
+    vertical-align: top;
+    display:flex;
+    flex-direction: column;
+}
+.heroes-build-talent-tier-level{
+    font-weight: 800;
+    color: #ffb100;
+    font-size: 0.9rem;
+    text-shadow: 0 0 10px black;
+}
+.heroes-build-talent-tier-order{
+    display: block;
+}
+.heroes-build-talent-tier-no{
+    width:0.7rem;
+    height:0.7rem;
+    display: inline-block;
+    border-radius:15%;
+    border:1px solid black;
+    background-color: #5c5c5c;
+       
+}
+.heroes-build-talent-tier-maybe{
+    width:0.7rem;
+    height:0.7rem;
+    display: inline-block;
+    border-radius:15%;
+    border:1px solid black;
+    background-color: orange; 
+    box-shadow: 0 0 8px black;
+    
+}
+.heroes-build-talent-tier-yes{
+    border: 1px solid black;;
+    background-color: lime;
+    box-shadow:0 0 8px black;
+    border-radius:15%;
+    display: inline-block;
+    width:0.8rem;
+    height:0.8rem;
+}
+
+
+/* ---------- Build Tooltips ---------- */
+
+.heroes-build-talent-tier-choice .tooltip {
+    z-index: 10050; 
+    background: rgb(15, 0, 41);
+    border: 3px solid #32ac49;
+    border-radius: 0px 20px 0px 20px;
+    width:280px;
+    height:auto;
+    bottom:48%;
+    margin-left:-100px;
+    /*display: block;
+    width:400px;
+    height:auto;
+    top:20%;
+    margin-left:125px;*/ /* to the right */
+    opacity: 0;
+    padding-top:10px;
+    padding-bottom:8px;
+    padding-left:8px;
+    padding-right:8px;
+    line-height: 15px;
+    pointer-events: none;
+    position: absolute;
+    transform: translateY(30px);
+        -webkit-transform: translateY(30px);
+        -moz-transform: translateY(30px);
+        -ms-transform: translateY(30px);
+        -o-transform: translateY(30px);
+
+    transition: all .25s ease-out;
+        -webkit-transition: all .25s ease-out;
+        -moz-transition: all .25s ease-out;
+        -ms-transition: all .25s ease-out;
+        -o-transition: all .25s ease-out;
+
+    box-shadow:0 5px 18px black;
+    /*box-shadow:0 0 8px rgb(88, 0, 230);
+        -webkit-box-shadow: 0 0 8px rgb(88, 0, 230);
+        -moz-box-shadow: 0 0 8px rgb(88, 0, 230);
+        -ms-box-shadow: 0 0 8px rgb(88, 0, 230);
+        -o-box-shadow: 0 0 8px rgb(88, 0, 230);*/
+}
+.tooltip-10-20{
+    background-image: url(imgs/hero-storm-stone.jpg) !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    border: 3px solid #32ac49 !important;
+    box-shadow: 0 0 8px #5bc66e,
+        inset 0 0 8px #5bc66e !important;
+}
+.tooltip-level{
+    color:rgb(133, 133, 133);
+    margin-left:3px;
+    font-style: italic;
+    font-family: Metronic,Arial,sans-serif;
+    font-size:13px;
+}
+.tooltip h4,
+.tooltip-10-20 h4{
+    color:#32ac49;
+    font-size:14px;
+    font-style: italic;
+    font-weight: 800;
+    font-family: Metronic,Arial,sans-serif;
+}
+.build-1 .tooltip-10-20 h4{
+    color:#32ac49;
+    font-weight: 900;
+    text-shadow: 0 0 8px #009cff;
+}
+.tooltip-text,
+.tooltip-text-10-20{
+    color: #fff;
+    font-size:11px;
+    font-weight: 800;
+    font-style: italic;
+    font-family: Metronic,Arial,sans-serif;
+}
+.tooltip-text-10-20{
+    color:#fff;
+    text-shadow: 0 0 13px #009cff;
+}
+.heroes-build-talent-tier-choice:hover .tooltip {
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transform: translateY(0px);
+      -moz-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+       -o-transform: translateY(0px);
+        transform: translateY(0px);
+}
+
+
+/* ---------- Build-2 Tooltips ----------- */ 
+.build-2 .tooltip{
+    border: 3px solid #3291c6;
+}
+.build-2 .tooltip-10-20{
+    border: 3px solid #3291c6 !important;
+    box-shadow: 0 0 8px #3c93bf,
+        inset 0 0 8px #3c93bf !important;
+}
+.build-2 .tooltip h4{
+    color:#3291c6;
+    font-style: italic;
+    font-weight: 800;
+    font-family: Metronic,Arial,sans-serif;
+}
+.build-2 .tooltip-10-20 h4{
+    color:#3291c6;
+    font-weight: 900;
+    text-shadow: 0 0 8px #009cff;
+}
+
+/* ---------- Build-2 Tooltips End ---------- */
+
+
+/* ---------- Build-3 Tooltips ----------- */ 
+.build-3 .tooltip{
+    border: 3px solid #bd0541;
+}
+.build-3 .tooltip-10-20{
+    border: 3px solid #bd0541 !important;
+    box-shadow: 0 0 8px #fc6790,
+        inset 0 0 8px #fc6790 !important;
+}
+.build-3 .tooltip h4{
+    color:#bd0541;
+    font-style: italic;
+    font-weight: 800;
+    font-family: Metronic,Arial,sans-serif;
+}
+.build-3 .tooltip-10-20 h4{
+    color:#bd0541;
+    font-weight: 900;
+    text-shadow: 0 0 8px #009cff;
+}
+/* ---------- Build-3 Tooltips End ---------- */
+
+/* ---------- Build-4 Tooltips ----------- */ 
+.build-4 .tooltip{
+    border: 3px solid #b6b009;
+}
+.build-4 .tooltip-10-20{
+    border: 3px solid #b6b009 !important;
+    box-shadow: 0 0 8px #fefc83,
+        inset 0 0 8px #fefc83 !important;
+}
+.build-4 .tooltip h4{
+    color:#b6b009;
+    font-style: italic;
+    font-weight: 800;
+    font-family: Metronic,Arial,sans-serif;
+}
+.build-4 .tooltip-10-20 h4{
+    color:#b6b009;
+    font-weight: 900;
+    text-shadow: 0 0 8px #009cff;
+}
+/* ---------- Build-4 Tooltips End ---------- */
+
+
+
+/* ---------- Hero Tooltips Situational ---------- */
+.heroes-build-talent-tier-situational{
+    position: absolute;
+    display: inline-block;
+    top:100%;
+}
+.heroes-build-talent-tier-situational img{
+    position: absolute;
+    top:12px;
+    left:21px;
+    height:45px;
+    width: 45px;
+    opacity:0.8;
+}
+.heroes-build-talent-tier-situational-question-mark{
+    position: absolute;
+    padding-top:5.5px;
+    top:16px;
+    left:21px;
+    font-weight: 800;
+    color: orange;
+    font-size:18px;
+    height:45px;
+    width: 45px;
+    border:2px solid transparent;
+    outline:0;
+    border-radius:15px;
+    background-color:rgba(0, 0, 0, 0.50);
+}
+.second-situational img,
+.second-situational-10-20 img{
+    position: absolute;
+    top:65px;
+    left:21px;
+    height:45px;
+    width: 45px;
+    opacity:0.8;
+}
+.second-situational .heroes-build-talent-tier-situational-question-mark,
+.second-situational-10-20 .heroes-build-talent-tier-situational-question-mark{
+    top:68px;
+    left:21px;
+    background-color:rgba(0,0,0,0.50);
+}
+.third-situational img,
+.third-situational-10-20 img{
+    position: absolute;
+    top:120px;
+    left:21px;
+    height:45px;
+    width: 45x;
+    opacity:0.8;
+}
+.third-situational .heroes-build-talent-tier-situational-question-mark,
+.third-situational-10-20 .heroes-build-talent-tier-situational-question-mark{
+    position: absolute;
+    top:90px;
+    left:21px;
+    height:45px;
+    width: 45px;
+    opacity:0.8;
+}
+/* ---------- Hero Builds Tooltips-Situational ---------- */
+.heroes-build-talent-tier-situational .tooltip-situational,
+.heroes-build-talent-tier-situational .tooltip-situational-10-20{
+    z-index: 10050; 
+    background: rgb(15, 0, 41);
+    border: 2px solid #32ac49;
+    border-radius: 30px 0px 30px 0px;
+    text-align: left;
+    display: block;
+    width:280px;
+    height:auto;
+    bottom:0;
+    margin-left:-100px;
+    opacity: 0;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    pointer-events: none;
+    line-height: 1.2;
+    position: absolute;
+    transform: translateY(-30px);
+        -webkit-transform: translateY(-30px);
+        -moz-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        -o-transform: translateY(-30px);
+
+    transition: all .25s ease-out;
+        -webkit-transition: all .25s ease-out;
+        -moz-transition: all .25s ease-out;
+        -ms-transition: all .25s ease-out;
+        -o-transition: all .25s ease-out;
+
+    box-shadow:0 0 18px black;
+    /*box-shadow:0 0 8px rgb(88, 0, 230);
+        -webkit-box-shadow: 0 0 8px rgb(88, 0, 230);
+        -moz-box-shadow: 0 0 8px rgb(88, 0, 230);
+        -ms-box-shadow: 0 0 8px rgb(88, 0, 230);
+        -o-box-shadow: 0 0 8px rgb(88, 0, 230);*/
+}
+.second-situational .tooltip-situational,
+.second-situational-10-20 .tooltip-situational-10-20,
+.third-situational .tooltip-situational,
+.third-situational-10-20 .tooltip-situational-10-20{
+    bottom:100%;
+    margin-bottom:-55px;
+}
+
+.build-1 .tooltip-situational-10-20{
+    background-image: url(imgs/hero-storm-stone.jpg) !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    border: 2px solid #32ac49 !important;
+    box-shadow: 0 0 5px #5bc66e,
+        inset 0 0 5px #5bc66e !important;
+}
+
+
+.tooltip-situational h4,
+.tooltip-situational-10-20 h4{
+    margin:0 !important;
+    padding:0 !important;
+    color: #32ac49;
+    font-size: 14px;
+    font-weight: 800;
+    font-style: italic;
+    font-family: Metronic,Arial,sans-serif;
+    text-align: left;
+}
+.build-1 .tooltip-situational-10-20 h4{
+    color:#32ac49;
+    font-weight: 900;
+    text-shadow: 0 0 8px #009cff;
+}
+.tooltip-text-situational,
+.tooltip-text-situational-10-20{
+    color: #fff;
+    font-size:11px;
+    
+    font-weight: 800;
+    font-style: italic;
+    font-family: Metronic,Arial,sans-serif;
+    text-align: left !important;
+}
+.tooltip-text-situational-10-20{
+    color:#fff;
+    text-shadow: 0 0 13px #009cff;
+}
+.heroes-build-talent-tier-situational:hover .tooltip-situational,
+.heroes-build-talent-tier-situational:hover .tooltip-situational-10-20 {
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transform: translateY(0px);
+      -moz-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+       -o-transform: translateY(0px);
+        transform: translateY(0px);
+}
+
+
+/* ---------- Build-2 Situational ----------- */ 
+.build-2 .tooltip-situational{
+    border: 2px solid #3291c6;
+}
+.build-2 .tooltip-situational-10-20{
+    background-image: url(imgs/hero-storm-stone.jpg) !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    border: 2px solid #3291c6 !important;
+    box-shadow: 0 0 5px #3c93bf,
+        inset 0 0 5px #3c93bf !important;
+}
+.build-2 .tooltip-situational h4{
+    color:#3291c6;
+    font-style: italic;
+    font-weight: 800;
+    font-family: Metronic,Arial,sans-serif;
+}
+.build-2 .tooltip-situational-10-20 h4{
+    color:#3291c6;
+    font-weight: 900;
+    text-shadow: 0 0 8px #009cff;
+}
+
+/* ---------- Build-2 Situational End ---------- */
+
+/* ---------- Build-3 Situational ----------- */ 
+.build-3 .tooltip-situational{
+    border: 2px solid #bd0541;
+}
+.build-3 .tooltip-situational-10-20{
+    background-image: url(imgs/hero-storm-stone.jpg) !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    border: 2px solid #bd0541 !important;
+    box-shadow: 0 0 5px #fc6790,
+        inset 0 0 5px #fc6790 !important;
+}
+.build-3 .tooltip-situational h4{
+    color:#bd0541;
+    font-style: italic;
+    font-weight: 800;
+    font-family: Metronic,Arial,sans-serif;
+}
+.build-3 .tooltip-situational-10-20 h4{
+    color:#bd0541;
+    font-weight: 900;
+    text-shadow: 0 0 8px #009cff;
+}
+
+/* ---------- Build-3 Situational End ---------- */
+
+
+/* ---------- Build-4 Situational ----------- */ 
+.build-4 .tooltip-situational{
+    border: 2px solid #b6b009;
+}
+.build-4 .tooltip-situational-10-20{
+    background-image: url(imgs/hero-storm-stone.jpg) !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    border: 2px solid #b6b009 !important;
+    box-shadow: 0 0 5px #fefc83,
+        inset 0 0 5px #fefc83 !important;
+}
+.build-4 .tooltip-situational h4{
+    color:#b6b009;
+    font-style: italic;
+    font-weight: 800;
+    font-family: Metronic,Arial,sans-serif;
+}
+.build-4 .tooltip-situational-10-20 h4{
+    color:#b6b009;
+    font-weight: 900;
+    text-shadow: 0 0 8px #009cff;
+}
+
+/* ---------- Build-4 Situational End ---------- */
+
+
+
+/* ---------- Build Passives ---------- */
+/* ---------- Build-1 Passive ---------- */
+.build-1 .passive{
+    color:#32ac49;
+    font-style: italic;
+    font-size: 14px;
+    font-family: Metronic,Arial,sans-serif;
+}
+/* ---------- Build-2 Passive ---------- */
+.build-2 .passive{
+    color:#3291c6;
+    font-style: italic;
+    font-size: 13px;
+    font-family: Metronic,Arial,sans-serif;
+}
+/* ---------- Build-3 Passive ---------- */
+.build-3 .passive{
+    color:#bd0541;
+    font-style: italic;
+    font-size: 14px;
+    font-family: Metronic,Arial,sans-serif;
+}
+/* ---------- Build-4 Passive ---------- */
+.build-4 .passive{
+    color:#b6b009;
+    font-style: italic;
+    font-size: 14px;
+    font-family: Metronic,Arial,sans-serif;
+}
+/* ---------- Build Passives End ---------- */
+/* ---------- Hero Builds Tooltips Situational ---------- */
+/* ---------- Hero Builds End ---------- */
+
+
+/* ---------- Pros & Cons ---------- */
+.pros-cons{
+    position: absolute;
+    right:0%;
+    top: 5%;
+    width: 83%;
+    left: 10%;
+    z-index: 10;
+    color: #fff;
+    text-align:center;
+    justify-content: space-evenly;
+}
+.pros{
+    background-image: url(//static.icy-veins.com/images/common/strengths_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border:2px solid #32ac49;
+    box-shadow: 0 0 8px #5bc66e;
+    padding:0 !important;
+    height:140px;
+}
+.pros-heading h4{
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: white;
+    border:2px solid black;
+    box-shadow: 0px 2px 8px 0px #5bc66e;
+    text-shadow: 0 0 8px #5bc66e;
+    text-align: center;
+    margin:0 !important;
+    padding:5px 0;
+}
+.pros-list{
+    margin: 0 !important;
+    padding: 5px 5% !important;
+    justify-content: start;
+    align-items: flex-start;
+}
+.pros-list-items{
+    margin: 0 !important;
+    padding: 5px 0 !important;
+    list-style: none;
+    font-size:0.9rem;
+    font-weight: bold;
+    text-align: left;
+    width:100%;
+}
+.fa-plus,
+.fa-walking{
+    color:#32ac49;
+    padding:0 10px;
+}
+
+.cons{
+    background-image: url(//static.icy-veins.com/images/common/weaknesses_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border:2px solid #bd0541;
+    box-shadow: 0 0 8px #fc6790;
+    padding:0 !important;
+    margin:0 !important;
+    height:140px;
+}
+.cons-heading h4{
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: white;
+    text-align: center;
+    border:2px solid black;
+    box-shadow: 0px 2px 8px 0px #fc6790;
+    text-shadow: 0 0 8px #fc6790;
+    padding:5px 0 !important;
+    margin:0 !important;
+}
+.cons-list{
+    margin:0 !important;
+    padding:5px 5% !important;
+    justify-content: start;
+    align-items: flex-start;
+}
+.cons-list-items{
+    margin: 0 !important;
+    padding: 5px 0 !important;
+    list-style: none;
+    font-size:0.9rem;
+    font-weight: bold;
+    text-align: left;
+    width:100%;
+}
+.fa-minus,
+.fa-accessible-icon{
+    color:#bd0541;
+    padding:0 10px;
+}
+/* ---------- Pros & Cons End ---------- */
+
+
+
+/* ---------- Synergies & Counters ---------- */
+.with-against{
+    position: absolute;
+    right:0%;
+    top: 48%;
+    width:83%;
+    left: 10%;
+    z-index: 10;
+    text-align: center;
+    justify-content: space-evenly;
+    color: #fff;
+}
+.with-heroes-header{
+    background-image: url(//static.icy-veins.com/images/common/strengths_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border:2px solid black;
+    text-shadow: 0 0 8px #5bc66e;
+    box-shadow: 0px 2px 8px 0px #5bc66e;
+}
+.against-heroes-header{
+    background-image: url(//static.icy-veins.com/images/common/weaknesses_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border:2px solid black;
+    text-shadow: 0 0 8px #fc6790;
+    box-shadow: 0px 2px 8px 0px #fc6790;
+}
+.with-heroes-header h4,
+.against-heroes-header h4{
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 0 !important;
+    padding: 5px 0;
+}
+.with-heroes{
+    background-image: url(//static.icy-veins.com/images/common/strengths_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border:2px solid #32ac49;
+    box-shadow: 0 0 8px #5bc66e;
+    padding:0 !important;
+    height:145px;
+}
+.with-heroes-list{
+    margin: 0 !important;
+    padding: 0!important;  
+    padding:5px 5% !important;
+    justify-content: start;
+    align-items: flex-start;
+}
+.with-heroes-list-items {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+}
+
+.with-heroes-list-items img{
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    border:2px solid #32ac49;
+    /*box-shadow:0 0 8px #32ac49;*/
+}
+
+
+.against-heroes{
+    background-image:url(//static.icy-veins.com/images/common/weaknesses_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border:2px solid #bd0541;
+    box-shadow: 0 0 8px #fc6790;
+    padding:0 !important;
+    margin:0 !important;
+    height: 145px;
+}
+.against-heroes-list{
+    margin: 0 !important;
+    padding:5px 5% !important;
+    justify-content: start;
+    align-items: flex-start;
+}
+.against-heroes-list-items {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+}
+
+.against-heroes-list-items img{
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    border:2px solid #bd0541;
+    /*box-shadow:0 0 8px #fc6790;*/
+}
+.counter-imgs,
+.good-with-imgs{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top:5px;
+}
+/* ---------- Synergies & Counters End ---------- */
+
+
+/* ---------- Pepe ---------- */
+.pepe{
+    position: absolute;
+    border:0 !important;
+    border-radius:20px !important;
+    height:50px !important;
+    width: 50px !important;
+    right:15%;
+}
+/* ---------- Pepe End ---------- */
+
+
+
+/* ---------- Button Defaults ---------- */
+.btn:active,
+.btn:focus,
+.btn:focus:active {
+  background-image: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+button:active{
+    outline:none !important;
+    box-shadow:none !important;
+    border:none !important;
+}
+/* ---------- Button Defaults End ---------- */
+
+
+/* ---------- Coming Soon / New ---------- */
+.coming-soon{
+    position: absolute;
+    margin-left:45px;
+    margin-top:15px;
+    color:#fff;
+    text-align: center;
+    font-weight: 700 !important;
+    font-family: Metronic,Arial,sans-serif !important;
+    letter-spacing: 1px;
+    background-color: rgb(220, 29, 61);
+    border-radius: 0 10px 0 10px;
+    border: 1px solid #000;
+    -webkit-box-shadow: 0 0 8px 1px rgba(0,0,0,.50);
+    box-shadow: 0 0 8px 1px rgba(0,0,0,.50);
+    width: 60px;
+    height: 25px;
+    z-index: 1;
+}
+.upcoming{
+    opacity:0.4;
+}
+/* ---------- Coming Soon / New ---------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== */
+/* ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== */
+/* ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== */
+/* ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== */
+/* ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== */
+/* ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== */
+/* ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== */
+/* ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== */
+/* ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== */
+/* ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== */
+/* ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== */
+/* ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== */
+/* ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== ========== */
+
+
+@media (max-width: 575.98px) {
+    h4{
+        margin-bottom: 2px !important;
+    }
+    .hots-logo {
+        height: 100px;
+        margin: 2px;
+    }
+    input {
+        width: 200px;
+        padding: 4px;
+        margin: 0px;
+        font-weight: 800;
+        font-size: 12px !important;
+    }
+    .roles {    
+        width:auto;
+        margin-top:10px;
+        margin-bottom:20px;
+        padding-bottom:15px;
+        padding-right:10px;
+        box-shadow:0 0 16px rgba(0, 0, 0, 0.30);
+        background:rgba(104, 104, 104, 0.1);
+    }
+    .filter {
+        margin:0;
+        display:flex;
+        align-content:center;
+        cursor:pointer;
+        height:auto;
+        height:55px;
+        width:60px;
+        transform:scale(0.6,0.6);
+        transition: all 0.3s;
+        opacity:0.5;
+    }
+    .filter.active {
+        cursor: pointer;
+        transform: scale(0.7,0.7);
+        opacity: 1;
+    }
+    .filter img{
+        height:80px;
+        width:auto;
+    }
+    .heroes-container{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items:center;
+        padding:0 !important;
+    }
+    /* ---------- Hero Icons ---------- */
+    img.showcase{
+        height:65px;
+    }
+    .showcase{
+        position:relative;
+        padding:0 !important;
+        opacity:1;
+        margin-right: 8px;
+        margin-left: 8px;
+        margin-bottom: 8px;
+        margin-top: 4px;
+        padding:0px;
+        border-radius:50%;
+        box-shadow:0 0 10px #fff;
+        transform: scale(0.8,0.8);
+        transition:0.3s;
+    }
+    .showcase:hover{
+        opacity:1;
+        border-radius:50%;
+        transform: scale(1,1);
+        box-shadow: 0 0 10px #88b8ff,
+                    inset 0 0 6px rgba(51,187,255, 1), 
+                    inset 0 0 40px rgba(51,187,255, 1), 
+                          0 0 6px rgba(51,187,255, 1), 
+                          0 0 40px rgba(51,187,255, 1);
+        border: 3px solid #88b8ff;
+        transition:0.3s;
+    }
+    .upcoming{
+        opacity:0.4;
+    }
+    .coming-soon {
+        margin-left: 36px;
+        margin-top: 5px;
+        font-size: 13px;
+        width: 50px;
+        height: 22px;
+    }
+
+    /* ---------- Modal Control Keys ---------- */
+    .carousel-control-prev-icon{
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+        height:20px !important;
+        width:20px !important;
+        transition:0.5s !important;
+        z-index:1000;
+    }
+
+    .carousel-control-next-icon{
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e") !important;
+        height:20px !important;
+        width:20px !important;
+        transition:0.5s !important;   
+        z-index:1000;
+    }
+    .carousel-control-next, 
+    .carousel-control-prev{
+        top: 36% !important;
+        bottom: 36% !important;
+        width:6% !important;
+        border:0;
+        z-index:1000;
+        transition:0.5s !important;   
+    }
+    .carousel-control-next{
+        border-right:0;
+        outline: 0 !important;
+        transition: opacity .15s ease !important; 
+        background:none;
+        z-index:1000;
+    }
+    .carousel-control-prev{
+        border-left:0;
+        transition: opacity .15s ease !important;
+        outline: 0 !important;
+        background:none;
+        z-index:1000;
+    }
+    .carousel-control-next:hover{
+        background:none;
+        transition:0.5s !important;   
+        border:0 !important;
+        z-index:1000;
+    }
+    .carousel-control-prev:hover{
+        background:none;
+        transition:0.5s !important;   
+        border:0 !important;
+        z-index:1000;
+    }
+    .close {
+        top:1.5%;
+        right:5.5%;
+    }
+    /* ---------- Modal Control Keys End ---------- */
+    
+
+    /* ---------- Modal ---------- */
+    .modal-xl{
+        min-width:auto !important; 
+        max-width:auto !important;
+        height:auto;
+    }
+    .modal.fade{
+        top:4% !important;
+        padding:0px !important;
+    }
+    .carousel-inner img {
+        width:100%;
+        height:75vh;
+    }
+    .wow-icon,
+    .diablo-icon,
+    .ow-icon,
+    .sc-icon,
+    .hots-icon{
+        position: absolute;
+        top:2.5%;
+        left:2.5%;
+        height:45px;
+    }
+    .modal-header {
+        border-bottom: 1px solid transparent !important;
+    }
+    .modal-title{
+        font-size:1.3rem;
+        padding-top:5px;
+        padding-bottom:5px;
+        text-shadow: 0 0 13px #009cff;
+    }
+    .subtitle{
+        color: #6cf;
+        text-shadow: 0 0 8px black;
+        font-size:1rem; 
+    }
+
+       /* Modals */   
+    .modal-content {
+        margin:0 !important;
+        border-radius: 0 !important;
+        outline:none !important;
+        z-index: 1060;
+    }
+    .modal-content:before {
+        content: "";
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        right: -1px;
+        bottom: -1px;
+        z-index: -1;
+      }
+    .modal-content:after {
+        content: "";
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        right: -3px;
+        bottom: -3px;
+        z-index: -2;
+        filter: blur(5px);
+    }
+    .modal-content:before,
+    .modal-content:after{
+        background: linear-gradient(140deg, #85b9ff,rgb(37, 0, 97),  #ff85f6);
+    }
+    .carousel-indicators li{
+        height:0px !important;
+        padding:0 0px;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        margin-bottom:0;
+        border-radius:0;
+      }
+/* ---------- Modal End ---------- */
+
+
+/* ---------- Hero Builds ---------- */
+/* ---------- Hero Builds Dropdown ---------- */
+    .heroes-build-swapper{
+        right:0%;
+        top: 7.5%;
+        left:0%;
+    }
+    button.dropdown{
+        height:40px;
+        width:200px;
+        border-radius:6px;
+        border:2px solid rgb(88, 0, 230);
+    }
+    button.dropdown:hover{
+        color:black;
+        background:rgb(88, 0, 230);
+        transition: 0.5s;
+    }
+    .dropdown{
+        font-size: 1rem !important;
+        font-weight: 800 !important;
+    }
+    .dropdown-menu button{
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+    .dropdown-menu.show {
+        width:160px;
+        height:82px;
+        top:1% !important;
+        left:20px !important;
+    }
+    .dropdown-menu.show::-webkit-scrollbar{
+        width: 6px;
+        border-radius: 0 20px 20px 0;
+    }
+    .dropdown-menu.show::-webkit-scrollbar-thumb{
+        background:rgb(88, 0, 230);
+        border-radius: 0 20px 20px 0;
+    }
+    /* ---------- Hero Builds Dropdown End ---------- */
+    .heroes-build{
+        position: absolute;
+        right: 0% !important;
+        left: 10% !important;
+        top: 20%;
+        width: 80%;
+        z-index: 10;
+        color: #fff;
+        text-align: center;
+    }
+    .heroes-build-title{
+        font-size:1.1rem;
+        padding-bottom:0px;
+        margin-bottom:2.5px !important;
+    }
+    .heroes-build-talents{ 
+        padding:0px 0px !important;
+        margin:0 auto !important;
+        width:60% !important;
+        display: flex;
+        align-items:flex-start;
+        justify-content: space-evenly;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .heroes-build-talents img{
+        margin:0;
+        width:45px;
+        height:45px;
+        border-radius:15px;
+        box-shadow:none;
+    }
+    .build-1 img{
+        border:2px solid #32ac49;
+        box-shadow: 0 0 8px #5bc66e;
+    }
+    .build-2 img{
+        border:2px solid #3291c6;
+        box-shadow: 0 0 8px #3c93bf;
+    }
+    .build-3 img{
+        border:2px solid #bd0541;
+        box-shadow:0 0 8px #fc6790;
+    }
+    .build-4 img{
+        border:2px solid  #b6b009;
+        box-shadow:0 0 8px #fefc83;
+    }
+
+    .heroes-build-talent-tier{
+        margin-top:3px;
+        width: auto;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .heroes-build-talent-tier-level{
+        position: absolute;
+        margin-left:55px;
+        margin-top:0px;
+        font-weight: 800;
+        color: #ffb100;
+        font-size: 0.8rem;
+        text-shadow: 0 0 10px black;
+    }
+    .heroes-build-talent-tier-order{
+        position: absolute;
+        margin-left:62px;
+        margin-top:18px;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+    }
+    .heroes-build-talent-tier-no{
+        width:0.6rem;
+        height:0.6rem;
+        display: inline-block;
+        border-radius:15%;
+        border:1px solid black;
+        background-color: #5c5c5c;
+    }
+    .heroes-build-talent-tier-maybe{
+        width:0.6rem;
+        height:0.6rem;
+        display: inline-block;
+        border-radius:15%;
+        border:1px solid black;
+        background-color: orange; 
+        box-shadow: 0 0 4px black;
+
+    }
+    .heroes-build-talent-tier-yes{
+        border: 1px solid black;;
+        background-color: lime;
+        box-shadow:0 0 4px black;
+        border-radius:15%;
+        display: inline-block;
+        width:0.7rem;
+        height:0.7rem;
+    }
+/* ---------- Build Tooltips ---------- */
+
+    .heroes-build-talent-tier-choice .tooltip {
+        z-index: 10050; 
+        background: rgb(15, 0, 41);
+        border: 1px solid #32ac49;
+        border-radius: 0px 20px 0px 20px;
+        width:170px;
+        height:auto;
+        right:0;
+        bottom:0;
+        margin-bottom:140px;
+        margin-right:0px;
+        opacity: 0;
+        padding-top:10px;
+        padding-bottom:8px;
+        padding-left:8px;
+        padding-right:8px;
+        line-height: 15px;
+        pointer-events: none;
+        position: absolute;
+        transform: translateY(30px);
+            -webkit-transform: translateY(30px);
+            -moz-transform: translateY(30px);
+            -ms-transform: translateY(30px);
+            -o-transform: translateY(30px);
+
+        transition: all .25s ease-out;
+            -webkit-transition: all .25s ease-out;
+            -moz-transition: all .25s ease-out;
+            -ms-transition: all .25s ease-out;
+            -o-transition: all .25s ease-out;
+
+        box-shadow:0 5px 18px black;
+        /*box-shadow:0 0 8px rgb(88, 0, 230);
+            -webkit-box-shadow: 0 0 8px rgb(88, 0, 230);
+            -moz-box-shadow: 0 0 8px rgb(88, 0, 230);
+            -ms-box-shadow: 0 0 8px rgb(88, 0, 230);
+            -o-box-shadow: 0 0 8px rgb(88, 0, 230);*/
+    }
+    .tooltip-10-20{
+        background-image: url(imgs/hero-storm-stone.jpg) !important;
+        background-position: center center !important;
+        background-size: cover !important;
+        border: 1px solid #32ac49 !important;
+        box-shadow: 0 0 4px #5bc66e,
+            inset 0 0 4px #5bc66e !important;
+    }
+    .tooltip-level{
+        color:rgb(133, 133, 133);
+        margin-left:3px;
+        font-style: italic;
+        font-family: Metronic,Arial,sans-serif;
+    }
+    .tooltip h4,
+    .tooltip-10-20 h4{
+        color:#32ac49;
+        font-size:12px;
+        font-style: italic;
+        font-weight: 800;
+        font-family: Metronic,Arial,sans-serif;
+    }
+    .build-1 .tooltip-10-20 h4{
+        color:#32ac49;
+        font-weight: 900;
+        text-shadow: 0 0 8px #009cff;
+    }
+    .tooltip-text,
+    .tooltip-text-10-20{
+        color: #fff;
+        font-size:10px;
+        font-weight: 800;
+        font-style: italic;
+        font-family: Metronic,Arial,sans-serif;
+    }
+    .tooltip-text-10-20{
+        color:#fff;
+        text-shadow: 0 0 13px #009cff;
+    }
+    .heroes-build-talent-tier-choice:hover .tooltip {
+        opacity: 1;
+        pointer-events: auto;
+        -webkit-transform: translateY(0px);
+          -moz-transform: translateY(0px);
+          -ms-transform: translateY(0px);
+           -o-transform: translateY(0px);
+            transform: translateY(0px);
+    }
+
+
+    /* ---------- Build-2 Tooltips ----------- */ 
+    .build-2 .tooltip{
+        border: 1px solid #3291c6;
+    }
+    .build-2 .tooltip-10-20{
+        border: 1px solid #3291c6 !important;
+        box-shadow: 0 0 4px #3c93bf,
+            inset 0 0 4px #3c93bf !important;
+    }
+    /* ---------- Build-2 Tooltips End ---------- */
+    /* ---------- Build-3 Tooltips ----------- */ 
+    .build-3 .tooltip{
+        border: 1px solid #bd0541;
+    }
+    .build-3 .tooltip-10-20{
+        border: 1px solid #bd0541 !important;
+        box-shadow: 0 0 4px #fc6790,
+            inset 0 0 4px #fc6790 !important;
+    }
+    /* ---------- Build-3 Tooltips End ---------- */
+
+    /* ---------- Build-4 Tooltips ----------- */ 
+    .build-4 .tooltip{
+        border: 1px solid #b6b009;
+    }
+    .build-4 .tooltip-10-20{
+        border: 1px solid #b6b009 !important;
+        box-shadow: 0 0 4px #fefc83,
+            inset 0 0 4px #fefc83 !important;
+    }
+    /* ---------- Build-4 Tooltips End ---------- */
+
+
+
+    /* ---------- Hero Tooltips Situational ---------- */
+    .heroes-build-talent-tier-situational{
+        display:none;
+        
+    }
+    .heroes-build-talent-tier-situational img{
+        position: absolute;
+        display: flex;
+        right:0 !important;
+        height:38px;
+        width: 38px;
+        opacity:0.8;
+    }
+    .heroes-build-talent-tier-situational-question-mark{
+        display:none;
+    }
+    .second-situational img,
+    .second-situational-10-20 img{
+        display:none;
+    }
+    .second-situational .heroes-build-talent-tier-situational-question-mark,
+    .second-situational-10-20 .heroes-build-talent-tier-situational-question-mark{
+        display:none;
+    }
+    .third-situational img,
+    .third-situational-10-20 img{
+        display:none;
+    }
+    .third-situational .heroes-build-talent-tier-situational-question-mark,
+    .third-situational-10-20 .heroes-build-talent-tier-situational-question-mark{
+        display:none;
+    }
+    /* ---------- Hero Builds Tooltips-Situational ---------- */
+    .heroes-build-talent-tier-situational .tooltip-situational,
+    .heroes-build-talent-tier-situational .tooltip-situational-10-20{
+        display:none;
+    }
+    .second-situational .tooltip-situational,
+    .second-situational-10-20 .tooltip-situational-10-20,
+    .third-situational .tooltip-situational,
+    .third-situational-10-20 .tooltip-situational-10-20{
+        display:none;
+    }
+
+    .build-1 .tooltip-situational-10-20{
+        display:none;
+    }
+    .tooltip-situational h4,
+    .tooltip-situational-10-20 h4{
+        display:none;
+    }
+    .build-1 .tooltip-situational-10-20 h4{
+        display:none;
+    }
+    .tooltip-text-situational,
+    .tooltip-text-situational-10-20{
+        display:none;
+    }
+    .tooltip-text-situational-10-20{
+        display:none;
+    }
+    .heroes-build-talent-tier-situational:hover .tooltip-situational,
+    .heroes-build-talent-tier-situational:hover .tooltip-situational-10-20 {
+        display:none;
+    }
+    /* ---------- Build-2 Situational ----------- */ 
+    .build-2 .tooltip-situational{
+        display:none;
+    }
+    .build-2 .tooltip-situational-10-20{
+        display:none;
+    }
+    .build-2 .tooltip-situational h4{
+        display:none;
+    }
+    .build-2 .tooltip-situational-10-20 h4{
+        display:none;
+    }
+
+    /* ---------- Build-2 Situational End ---------- */
+    /* ---------- Build-3 Situational ----------- */ 
+    .build-3 .tooltip-situational{
+        display:none;
+    }
+    .build-3 .tooltip-situational-10-20{
+        display:none;
+    }
+    .build-3 .tooltip-situational h4{
+        display:none;
+    }
+    .build-3 .tooltip-situational-10-20 h4{
+        display:none;
+    }
+
+    /* ---------- Build-3 Situational End ---------- */
+    /* ---------- Build-4 Situational ----------- */ 
+    .build-4 .tooltip-situational{
+        display:none;
+    }
+    .build-4 .tooltip-situational-10-20{
+        display:none;
+    }
+    .build-4 .tooltip-situational h4{
+        display:none;
+    }
+    .build-4 .tooltip-situational-10-20 h4{
+        display:none;
+    }
+
+    /* ---------- Build-4 Situational End ---------- */
+    /* ---------- Build Passives ---------- */
+    /* ---------- Build-1 Passive ---------- */
+    .build-1 .passive{
+        color:#32ac49;
+        font-style: italic;
+        font-size: 12px;
+        font-family: Metronic,Arial,sans-serif;
+    }
+    /* ---------- Build-2 Passive ---------- */
+    .build-2 .passive{
+        color:#3291c6;
+        font-style: italic;
+        font-size: 12px;
+        font-family: Metronic,Arial,sans-serif;
+    }
+    /* ---------- Build-3 Passive ---------- */
+    .build-3 .passive{
+        color:#bd0541;
+        font-style: italic;
+        font-size: 12px;
+        font-family: Metronic,Arial,sans-serif;
+    }
+    /* ---------- Build-4 Passive ---------- */
+    .build-4 .passive{
+        color:#b6b009;
+        font-style: italic;
+        font-size: 12px;
+        font-family: Metronic,Arial,sans-serif;
+    }
+/* ---------- Build Passives End ---------- */
+/* ---------- Hero Builds Tooltips Situational ---------- */
+/* ---------- Hero Builds End ---------- */
+
+
+/* ---------- Pros & Cons ---------- */
+.pros-cons{
+    position: absolute;
+    right:0%;
+    top: 2%;
+    width: 83%;
+    left: 13%;
+    z-index: 10;
+}
+.pros{
+    height:118px;
+}
+.pros-heading h4{
+    font-weight: 800;
+    font-size:0.9rem;
+    color: white;
+    border:1px solid black;
+}
+.pros-list{
+    margin: 0 !important;
+    padding:0% !important;
+}
+.pros-list-items{
+    margin: 0 !important;
+    padding: 5px 0% !important;
+    padding-left:25% !important;
+    font-size:0.7rem;
+}
+.fa-plus,
+.fa-walking{
+    color:#32ac49;
+    padding:0 10px;
+}
+
+.cons{
+    height:130px !important;
+}
+.cons-heading h4{
+    font-size: 0.9rem;
+}
+.cons-list{
+    margin:0 !important;
+    padding:5px 0 !important;
+    justify-content: start;
+    align-items: flex-start;
+}
+.cons-list-items{
+    margin: 0 !important;
+    padding: 5px 0 !important;
+    padding-left:25% !important;
+    font-size:0.7rem;
+}
+.fa-minus,
+.fa-accessible-icon{
+    color:#bd0541;
+    padding:0 10px;
+}
+/* ---------- Pros & Cons End ---------- */
+
+
+
+/* ---------- Synergies & Counters ---------- */
+.with-against{
+    position: absolute;
+    right:0%;
+    top: 48%;
+    width:83%;
+    left: 13%;
+    z-index: 10;
+}
+
+.with-heroes-header h4,
+.against-heroes-header h4{
+    font-weight: 800;
+    font-size: 0.9rem;
+}
+.with-heroes{
+    background-image: url(//static.icy-veins.com/images/common/strengths_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border:2px solid #32ac49;
+    box-shadow: 0 0 8px #5bc66e;
+    padding:0 !important;
+    height:125px;
+}
+.with-heroes-list{
+    padding:5px 0 !important;
+}
+.with-heroes-list-items {
+    font-size: 0.7rem;
+}
+
+.with-heroes-list-items img{
+    width: 45px;
+    height: 45px;
+    border-radius:50%;
+    margin-right:8px;
+    border:2px solid #32ac49;
+    /*box-shadow:0 0 8px #32ac49;*/
+}
+
+
+.against-heroes{
+    height: 120px;
+}
+.against-heroes-list{
+    margin: 0 !important;
+    padding:5px 0% !important;
+    justify-content: start;
+    align-items: flex-start;
+}
+.against-heroes-list-items {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+}
+
+.against-heroes-list-items img{
+    height:45px;
+    width:45px;
+    margin-right:10px;
+    border-radius:50%;
+    border:2px solid #bd0541;
+    /*box-shadow:0 0 8px #fc6790;*/
+}
+.counter-imgs,
+.good-with-imgs{
+    display: flex;
+    justify-content: center;
+    padding-top:0;
+}
+/* ---------- Synergies & Counters End ---------- */
+
+}
+
+
+
+
+
+@media (min-width: 1600px) {
+ /* ---------- Modal Control Keys ---------- */
+    .carousel-control-prev-icon{
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+        height:25px !important;
+        width:25px !important;
+        transition:0.5s !important;
+    }
+
+    .carousel-control-next-icon{
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e") !important;
+        height:25px !important;
+        width:25px !important;
+        transition:0.5s !important;   
+    }
+    .carousel-control-next, 
+    .carousel-control-prev{
+        top: 35% !important;
+        bottom: 35% !important;
+        width:6% !important;
+        border:3px solid rgb(98, 0, 255);
+        transition:0.5s !important;   
+    }
+    .carousel-control-next{
+        border-right:3px solid transparent;
+        outline: 0 !important;
+        transition: opacity .15s ease !important; 
+        background:linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
+    }
+    .carousel-control-prev{
+        border-left:3px solid transparent;
+        transition: opacity .15s ease !important;
+        outline: 0 !important;
+        background:linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
+    }
+    .carousel-control-next:hover{
+        background:linear-gradient(to right, rgba(98, 0, 255, 0.6),rgb(98, 0, 255));
+        transition:0.5s !important;   
+        border:0 !important;
+    }
+    .carousel-control-prev:hover{
+        background:linear-gradient(to left, rgba(98, 0, 255, 0.6),rgb(98, 0, 255));
+        transition:0.5s !important;   
+        border:0 !important;
+    }
+    .close {
+        position: absolute;
+        font-size: 30px !important;
+        outline:0 !important;
+        top:2.5%;
+        right:2.5%;
+        font-weight: 700;
+        line-height: 1;
+        color: white !important;
+        text-shadow: 0px 0px 6px rgb(0, 0, 0) !important;
+        opacity: 1 !important;
+        transition:0.3s;
+    }
+    .close:hover{
+        color:rgb(98, 0, 255) !important;
+        transition:0.3s;
+    }
+    .carousel-indicators li{
+        background-color:white  !important;
+        height:2.5px !important;
+        padding:0 7px;
+        margin-right: 10px !important;
+        margin-left: 10px !important;
+        margin-bottom:14px;
+        border:0 !important;
+        border-radius:10px;
+      }
+/* ---------- Modal Control Keys End ---------- */
+/* ---------- Hero Icons ---------- */
+    .title-container {
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .header-title {
+        color:white;
+        font-family: poppins;
+        font-size:50px;
+        font-weight:bold;
+        text-transform:uppercase;
+    }
+    .hots-logo{
+        height:150px;
+        margin:20px;
+    }
+    hr{
+        display:none;
+    }
+
+    .title-container {
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .header-title {
+        color:white;
+        font-family: poppins;
+        font-size:50px;
+        font-weight:bold;
+        text-transform:uppercase;
+    }
+    .search{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items:center;
+    }
+
+
+    .roles{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .roles-showcase{
+        color:white;
+        font-size:30px;
+        font-family:poppins;
+        margin-left:20px;
+        font-weight:bold;
+        text-transform:uppercase;
+    }
+    .all-icon{
+        transform: rotate(90deg);
+    }
+    .filter {
+        margin:5px;
+        display:flex;
+        align-content:center;
+        cursor:pointer;
+        height:110px;
+        width:110px;
+        transform:scale(0.7,0.7);
+        transition: all 0.3s;
+        opacity:0.5
+    }
+
+    .filter:hover {
+        color:black;
+        opacity:1;
+        transition:0.3s;
+    } 
+
+    .filter.active {
+        cursor:pointer;
+        transform:scale(0.9,0.9);
+        opacity:1;
+    }
+
+
+    input {
+        padding: 10px;
+        margin:40px;
+        color:#6c3097;
+        background:rgba(255,255,255, 0.6);
+        font-weight: 800;
+        font-family: Metronic,Arial,sans-serif;
+        opacity:0.8;
+        font-size:22px;
+        border-radius: 10px;
+        border:2px solid ;
+        box-shadow:0 0 10px black;
+        transition: all 0.3s;
+        outline:none;
+        text-align: center;
+    }
+
+
+    .heroes-container{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items:center;
+        margin:0 15px;
+    }
+    img.showcase{
+        height:100px;
+    }
+    .showcase{
+        position:relative;
+        opacity:1;
+        margin:20px;
+        padding:0px;
+        border-radius:50%;
+        box-shadow:0 0 10px #fff;
+        transform: scale(0.8,0.8);
+        transition:0.3s;
+    }
+    .showcase:hover{
+        opacity:1;
+        border-radius:50%;
+        transform: scale(1,1);
+        box-shadow: 0 0 10px #88b8ff,
+                    inset 0 0 6px rgba(51,187,255, 1), 
+                    inset 0 0 40px rgba(51,187,255, 1), 
+                          0 0 6px rgba(51,187,255, 1), 
+                          0 0 40px rgba(51,187,255, 1);
+        border: 3px solid #88b8ff;
+        transition:0.3s;
+    }
+/* ---------- Hero Icons End ---------- */
+    .heroes-container{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items:center;
+        margin:0 40px;
+    }
+    .modal.fade{
+        top:5% !important;
+        padding:10px !important;
+    }
+
+    .modal-xl{
+        min-width: 1280px !important;
+        height:auto;
+    }
+    .carousel-inner img {
+        width:100%;
+        height:65vh;
+    }
+
+    .modal-header {
+        background: url(https://static.icy-veins.com/images/common/toc-texture-light.jpg?v=2) !important;
+        text-align: center;
+        border:0 !important;
+        box-shadow:0 !important;
+        outline:none !important;
+        padding:0 !important;
+        border-bottom: 4px solid transparent !important;
+        border-image: linear-gradient(to right, #85b9ff,rgb(37, 0, 97)) !important;
+        border-image-slice: 1 !important;
+    }
+    .wow-icon,
+    .diablo-icon,
+    .ow-icon,
+    .sc-icon,
+    .hots-icon{
+        position: absolute;
+        top:3.5%;
+        left:3.5%;
+        height:90px;
+    }
+    .modal-title{
+        font-size:2.4rem;
+        font-weight: 800;
+        font-family: Metronic,Arial,sans-serif;
+        padding-top:20px;
+        padding-bottom:8px;
+        text-shadow: 0 0 13px #009cff;
+        color:white;
+        text-align: center;
+        border:0 transparent;
+        width: 100%;
+        letter-spacing:1px;
+    }
+    .subtitle{
+        color: #6cf;
+        text-shadow: 0 0 8px black;
+        font-size:2rem; 
+        font-weight: 600;
+        font-family: Metronic,Arial,sans-serif;
+        letter-spacing: 1px;
+    }
+
+
+
+    .heroes-build-swapper{
+        position: absolute;
+        padding:0 !important;
+        font-weight: 400;
+        font-size:2rem;
+        right:0%;
+        top: 10%;
+        left:0%;
+        text-align: center;
+    }
+    .outer-dropdown{
+        margin:0 !important;
+        padding:0 !important;
+        display: flex;
+        justify-content: center;
+    }
+    button.dropdown{
+        color:rgb(100, 62, 230);
+        background:black;
+        height:68px;
+        width:380px;
+        padding:0 !important;
+        border-radius:15px;
+        transition: 0.5s;
+        border:3px solid rgb(88, 0, 230);
+    }
+    button.dropdown:hover{
+        color:black;
+        background:rgb(88, 0, 230);
+        transition: 0.5s;
+    }
+
+    .dropdown{
+        font-size: 1.8rem !important;
+        font-weight: 800 !important;
+    }
+    button.dropdown i{
+        position: absolute;
+        font-size: 2.3rem;
+        right:24%;
+        top:26%;
+    }
+    .dropdown-menu button{
+        font-size: 1.8rem;
+        font-weight: 600;
+        border-radius: 0;
+        padding:10px 20px;
+        width:100%;
+        border:0;
+        color:rgb(65, 65, 65);
+        background:#000;
+        background-size: 3px 23px, 23px 3px;
+        transition: 0.3s;
+    }
+    .dropdown-menu button:hover,
+    .dropdown-menu button.select{
+        color:#fff;
+        background:linear-gradient(to right, #000, rgb(20, 20, 20), rgb(36, 36, 36), rgb(20, 20, 20), #000);
+        transition: 0.3s;
+        text-shadow: 0 0 7px #fff;
+        z-index:1000;
+    }
+
+    .dropdown-menu{
+        padding: 0 !important;
+        margin: 0 !important;   
+        border:0; 
+    }
+    .dropdown-menu.show {
+        position: absolute;
+        height:auto;
+        width:300px;
+        top:1% !important;
+        left:40px !important;
+        will-change: transform;
+        background:black;
+        border-radius: 0 20px 20px 20px;
+        display: flex !important;
+        justify-content: start;
+        align-items: flex-start;
+        flex-direction: column;
+        overflow-y: auto;
+        height:130px;
+    }
+    .dropdown-menu.show::-webkit-scrollbar{
+        width: 12px;
+        border-radius: 0 20px 20px 0;
+    }
+    .dropdown-menu.show::-webkit-scrollbar-thumb{
+        background:rgb(88, 0, 230);
+        border-radius: 0 20px 20px 0;
+        
+    }
+
+    .heroes-build{
+        position: absolute;
+        right:0%;
+        top: 25%;
+        width:80%;
+        left:10%;
+        z-index: 10;
+        color: #fff;
+        text-align: center;
+    }
+    .heroes-build-title{
+        text-align:center;
+        font-size:2.3rem;
+        padding-bottom:5px;
+        font-weight: 700;
+    }
+    .heroes-build-talents{ 
+        border:0;
+        padding:0px 20px !important;
+        margin:0 !important;
+        display: flex;
+        justify-content: space-between;
+    }
+    .heroes-build-talents img{
+        margin-top:3px;
+        width:90px;
+        height:90px;
+        border-radius:15px;
+        box-shadow:none;
+    }
+    .build-1 img{
+        border:4px solid #32ac49;
+        box-shadow: 0 0 8px #5bc66e;
+    }
+    .build-2 img{
+        border:4px solid #3291c6;
+        box-shadow: 0 0 8px #3c93bf;
+    }
+    .build-3 img{
+        border:4px solid #bd0541;
+        box-shadow:0 0 8px #fc6790;
+    }
+    .build-4 img{
+        border:4px solid  #b6b009;
+        box-shadow:0 0 8px #fefc83;
+    }
+
+    .heroes-build-talent-tier{
+        display: inline-block;
+        width: 13%;
+        text-align: center;
+        vertical-align: top;
+        display:flex;
+        flex-direction: column;
+    }
+    .heroes-build-talent-tier-level{
+        font-weight: 800;
+        color: #ffb100;
+        font-size: 1.3rem;
+        text-shadow: 0 0 10px black;
+    }
+    .heroes-build-talent-tier-order{
+        display: block;
+    }
+    .heroes-build-talent-tier-no{
+        width:1rem;
+        height:1rem;;
+        display: inline-block;
+        border-radius:15%;
+        border:1px solid black;
+        background-color: #5c5c5c;
+           
+    }
+    .heroes-build-talent-tier-maybe{
+        width:1.1rem;
+        height:1.1rem;;
+        display: inline-block;
+        border-radius:15%;
+        border:1px solid black;
+        background-color: orange; 
+        box-shadow: 0 0 8px black;
+        
+    }
+    .heroes-build-talent-tier-yes{
+        border: 1px solid black;;
+        background-color: lime;
+        box-shadow:0 0 8px black;
+        border-radius:15%;
+        display: inline-block;
+        width:1.2rem;
+        height:1.2rem;
+    }
+
+
+
+
+
+
+    /* ---------- Build Tooltips ---------- */
+    .tooltip{
+        overflow-y: auto;
+    }
+    .tooltip-icon{
+        height:50px !important;
+        width:50px !important;
+        position: absolute;
+        top:5px;
+        right:5px;
+        border:none !important;
+        box-shadow: none !important;
+    }
+    .heroes-build-talent-tier-choice .tooltip {
+        z-index: 10050; 
+        background: rgb(15, 0, 41);
+        border: 3px solid #32ac49;
+        border-radius: 0px 20px 0px 20px;
+        width:400px;
+        height:auto;
+        bottom: 47%;
+        margin-left:-135px;
+        opacity: 0;
+        padding: 15px;
+        line-height:23px;
+        pointer-events: none;
+        position: absolute;
+        transform: translateY(30px);
+            -webkit-transform: translateY(30px);
+            -moz-transform: translateY(30px);
+            -ms-transform: translateY(30px);
+            -o-transform: translateY(30px);
+
+        transition: all .25s ease-out;
+            -webkit-transition: all .25s ease-out;
+            -moz-transition: all .25s ease-out;
+            -ms-transition: all .25s ease-out;
+            -o-transition: all .25s ease-out;
+
+        box-shadow:0 5px 18px black;
+        /*box-shadow:0 0 8px rgb(88, 0, 230);
+            -webkit-box-shadow: 0 0 8px rgb(88, 0, 230);
+            -moz-box-shadow: 0 0 8px rgb(88, 0, 230);
+            -ms-box-shadow: 0 0 8px rgb(88, 0, 230);
+            -o-box-shadow: 0 0 8px rgb(88, 0, 230);*/
+    }
+    .tooltip-10-20{
+        background-image: url(imgs/hero-storm-stone.jpg) !important;
+        background-position: center center !important;
+        background-size: cover !important;
+        border: 3px solid #32ac49 !important;
+        box-shadow: 0 0 8px #5bc66e,
+            inset 0 0 8px #5bc66e !important;
+    }
+
+    .tooltip-level{
+        color:rgb(133, 133, 133);
+        margin-left:3px;
+        font-style: italic;
+        font-family: Metronic,Arial,sans-serif;
+        font-size:18px;
+    }
+    .tooltip h4,
+    .tooltip-10-20 h4{
+        color:#32ac49;
+        font-size:20px;
+        font-style: italic;
+        font-weight: 800;
+        font-family: Metronic,Arial,sans-serif;
+    }
+    .tooltip-10-20 h4{
+        color:#32ac49;
+        font-weight: 900;
+        text-shadow: 0 0 8px #009cff;
+    }
+    .tooltip-text,
+    .tooltip-text-10-20{
+        color: #fff;
+        font-size:17px;
+        font-weight: 800;
+        font-style: italic;
+        font-family: Metronic,Arial,sans-serif;
+    }
+    .tooltip-text-10-20{
+        color:#fff;
+        text-shadow: 0 0 13px #009cff;
+    }
+    .heroes-build-talent-tier-choice:hover .tooltip {
+        opacity: 1;
+        pointer-events: auto;
+        -webkit-transform: translateY(0px);
+          -moz-transform: translateY(0px);
+          -ms-transform: translateY(0px);
+           -o-transform: translateY(0px);
+            transform: translateY(0px);
+    }
+
+
+    /* ---------- Build-2 Tooltips ----------- */ 
+    .build-2 .tooltip{
+        border: 3px solid #3291c6;
+    }
+    .build-2 .tooltip-10-20{
+        border: 3px solid #3291c6 !important;
+        box-shadow: 0 0 8px #3c93bf,
+            inset 0 0 8px #3c93bf !important;
+    }
+    .build-2 .tooltip h4{
+        color:#3291c6;
+        font-style: italic;
+        font-weight: 800;
+        font-family: Metronic,Arial,sans-serif;
+    }
+    .build-2 .tooltip-10-20 h4{
+        color:#3291c6;
+        font-weight: 900;
+        text-shadow: 0 0 8px #009cff;
+    }
+    /* ---------- Build-2 Tooltips End ---------- */
+
+
+    /* ---------- Build-3 Tooltips ----------- */ 
+    .build-3 .tooltip{
+        border: 3px solid #bd0541;
+    }
+    .build-3 .tooltip-10-20{
+        border: 3px solid #bd0541 !important;
+        box-shadow: 0 0 8px #fc6790,
+            inset 0 0 8px #fc6790 !important;
+    }
+    .build-3 .tooltip h4{
+        color:#bd0541;
+        font-style: italic;
+        font-weight: 800;
+        font-family: Metronic,Arial,sans-serif;
+    }
+    .build-3 .tooltip-10-20 h4{
+        color:#bd0541;
+        font-weight: 900;
+        text-shadow: 0 0 8px #009cff;
+    }
+    /* ---------- Build-3 Tooltips End ---------- */
+
+    /* ---------- Build-4 Tooltips ----------- */ 
+    .build-4 .tooltip{
+        border: 3px solid #b6b009;
+    }
+    .build-4 .tooltip-10-20{
+        border: 3px solid #b6b009 !important;
+        box-shadow: 0 0 8px #fefc83,
+            inset 0 0 8px #fefc83 !important;
+    }
+    .build-4 .tooltip h4{
+        color:#b6b009;
+        font-style: italic;
+        font-weight: 800;
+        font-family: Metronic,Arial,sans-serif;
+    }
+    .build-4 .tooltip-10-20 h4{
+        color:#b6b009;
+        font-weight: 900;
+        text-shadow: 0 0 8px #009cff;
+    }
+    /* ---------- Build-4 Tooltips End ---------- */
+
+
+
+    /* ---------- Hero Tooltips Situational ---------- */
+    .heroes-build-talent-tier-situational{
+        position: absolute;
+        display: inline-block;
+        top:100%;
+    }
+    .heroes-build-talent-tier-situational img{
+        position: absolute;
+        top:12px;
+        left:33px;
+        height:60px;
+        width: 60px;
+        opacity:0.8;
+    }
+    .heroes-build-talent-tier-situational-question-mark{
+        position: absolute;
+        padding-top:2.5px !important;
+        top:16px;
+        left:33px !important;
+        font-weight: 800;
+        color: orange;
+        font-size:28px !important;
+        height:60px !important;
+        width: 60px !important;
+        border:2px solid transparent;
+        outline:0;
+        border-radius:15px;
+        background-color:rgba(0,0,0,0.50);
+    }
+    .second-situational img,
+    .second-situational-10-20 img{
+        position: absolute;
+        top:85px;
+        left:33px;
+        height:60px;
+        width: 60px;
+        opacity:0.8;
+    }
+    .second-situational .heroes-build-talent-tier-situational-question-mark,
+    .second-situational-10-20 .heroes-build-talent-tier-situational-question-mark{
+        top:88px;
+        left:33px !important;
+        background-color:rgba(0,0,0,0.50);
+    }
+    .third-situational img,
+    .third-situational-10-20 img{
+        position: absolute;
+        top:185px;
+        left:33px ;
+        height:60px;
+        width: 60px;
+        opacity:0.8;
+    }
+    .third-situational .heroes-build-talent-tier-situational-question-mark,
+    .third-situational-10-20 .heroes-build-talent-tier-situational-question-mark{
+        position: absolute;
+        top:188px;
+        left:33px ;
+        height:60px;
+        width: 60px;
+        opacity:0.8;
+    }
+
+
+    .pros-cons{
+        position: absolute;
+        right:0%;
+        top:3%;
+        width: 83%;
+        left: 10%;
+        z-index: 10;
+        color: #fff;
+        text-align:center;
+        justify-content: space-evenly;
+    }
+    .pros{
+        background-image: url(//static.icy-veins.com/images/common/strengths_bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border:3px solid #32ac49;
+        box-shadow: 0 0 8px #5bc66e;
+        padding:0 !important;
+        height:210px;
+    }
+    .pros-heading h4{
+        font-weight: 600;
+        font-size: 1.7rem;
+        color: white;
+        border:2px solid black;
+        box-shadow: 0px 2px 8px 0px #5bc66e;
+        text-shadow: 0 0 8px #5bc66e;
+        text-align: center;
+        margin:0 !important;
+        padding:8px 0;
+    }
+    .pros-list{
+        margin: 0 !important;
+        padding: 5px 5% !important;
+        justify-content: start;
+        align-items: flex-start;        
+    }
+    .pros-list-items{
+        margin: 0 !important;
+        padding: 5px 0 !important;
+        list-style: none;
+        font-size:1.4rem;
+        font-weight: bold;
+        text-align: left;
+        width:100%;
+    }
+    .fa-plus,
+    .fa-walking{
+        color:#32ac49;
+        padding:0 10px;
+    }
+    
+    .cons{
+        background-image: url(//static.icy-veins.com/images/common/weaknesses_bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border:3px solid #bd0541;
+        box-shadow: 0 0 8px #fc6790;
+        padding:0 !important;
+        margin:0 !important;
+        height:210px;
+    }
+    .cons-heading h4{
+        font-weight: 600;
+        font-size: 1.7rem;
+        color: white;
+        text-align: center;
+        border:2px solid black;
+        box-shadow: 0px 2px 8px 0px #fc6790;
+        text-shadow: 0 0 8px #fc6790;
+        padding:8px 0 !important;
+        margin:0 !important;
+    }
+    .cons-list{
+        margin:0 !important;
+        padding:5px 5% !important;
+        justify-content: start;
+        align-items: flex-start;
+    }
+    .cons-list-items{
+        margin: 0 !important;
+        padding: 5px 0 !important;
+        list-style: none;
+        font-size:1.4rem;
+        font-weight: bold;
+        text-align: left;
+        width:100%;
+    }
+    .fa-minus,
+    .fa-accessible-icon{
+        color:#bd0541;
+        padding:0 10px;
+    }
+    /* ---------- Pros & Cons End ---------- */
+    
+    
+    
+    /* ---------- Synergies & Counters ---------- */
+    .with-against{
+        position: absolute;
+        right:0%;
+        top: 45%;
+        width:83%;
+        left: 10%;
+        z-index: 10;
+        text-align: center;
+        justify-content: space-evenly;
+        color: #fff;
+    }
+    .with-heroes-header{
+        background-image: url(//static.icy-veins.com/images/common/strengths_bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border:2px solid black;
+        text-shadow: 0 0 8px #5bc66e;
+        box-shadow: 0px 2px 8px 0px #5bc66e;
+    }
+    .against-heroes-header{
+        background-image: url(//static.icy-veins.com/images/common/weaknesses_bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border:2px solid black;
+        text-shadow: 0 0 8px #fc6790;
+        box-shadow: 0px 2px 8px 0px #fc6790;
+    }
+    .with-heroes-header h4,
+    .against-heroes-header h4{
+        font-weight: 600;
+        font-size: 1.7rem;
+        margin: 0 !important;
+        padding: 10px 0;
+    }
+    .with-heroes{
+        background-image: url(//static.icy-veins.com/images/common/strengths_bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border:3px solid #32ac49;
+        box-shadow: 0 0 8px #5bc66e;
+        padding:0 !important;
+        height:240px;
+    }
+    .with-heroes-list{
+        margin: 0 !important;
+        padding: 0!important;  
+        padding:5px 5% !important;
+        justify-content: start;
+        align-items: flex-start;
+    }
+    .with-heroes-list-items {
+        margin: 0 !important;
+        padding: 5px 0 !important;
+        list-style: none;
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: left;
+        width: 100%;
+    }
+    
+    .with-heroes-list-items img{
+        margin-top:3px;
+        margin-left: 6px;
+        width: 90px;
+        height: 90px;
+        border-radius:50%;
+        border:3px solid #32ac49;
+        /*box-shadow:0 0 8px #32ac49;*/
+    }
+    
+    
+    .against-heroes{
+        background-image:url(//static.icy-veins.com/images/common/weaknesses_bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border:3px solid #bd0541;
+        box-shadow: 0 0 8px #fc6790;
+        padding:0 !important;
+        margin:0 !important;
+        height:240px;
+    }
+    .against-heroes-list{
+        margin: 0 !important;
+        padding:5px 5% !important;
+        justify-content: start;
+        align-items: flex-start;
+    }
+    .against-heroes-list-items {
+        margin: 0 !important;
+        padding: 5px 0 !important;
+        list-style: none;
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: left;
+        width: 100%;
+    }
+    
+    .against-heroes-list-items img{
+        margin-top:3px;
+        margin-left: 6px;
+        width: 90px;
+        height: 90px;
+        border-radius:50%;
+        border:3px solid #bd0541;
+        /*box-shadow:0 0 8px #fc6790;*/
+    }
+    .counter-imgs,
+    .good-with-imgs{
+        display: flex;
+        justify-content: space-evenly;
+        padding-top:2px;
+    }
+    /* ---------- Synergies & Counters End ---------- */
+    
+    /* ---------- Button Defaults ---------- */
+    .btn:active,
+    .btn:focus,
+    .btn:focus:active {
+      background-image: none !important;
+      outline: none !important;
+      box-shadow: none !important;
+    }
+    button:active{
+        outline:none !important;
+        box-shadow:none !important;
+        border:none !important;
+    }
+    /* ---------- Button Defaults End ---------- */
+    
+    
+    
+    
+    
+    
+    /* ---------- Hero Builds Tooltips-Situational ---------- */
+    .heroes-build-talent-tier-situational .tooltip-situational,
+    .heroes-build-talent-tier-situational .tooltip-situational-10-20{
+        z-index: 10050; 
+        background: rgb(15, 0, 41);
+        border: 2px solid #32ac49;
+        border-radius: 30px 0px 30px 0px;
+        text-align: left;
+        display: block;
+        width:400px;
+        height:auto;
+        bottom:0;
+        margin-left:-135px;
+        opacity: 0;
+        padding: 15px;
+        pointer-events: none;
+        line-height: 23px;
+        position: absolute;
+        transform: translateY(-30px);
+            -webkit-transform: translateY(-30px);
+            -moz-transform: translateY(-30px);
+            -ms-transform: translateY(-30px);
+            -o-transform: translateY(-30px);
+    
+        transition: all .25s ease-out;
+            -webkit-transition: all .25s ease-out;
+            -moz-transition: all .25s ease-out;
+            -ms-transition: all .25s ease-out;
+            -o-transition: all .25s ease-out;
+    
+        box-shadow:0 0 18px black;
+        /*box-shadow:0 0 8px rgb(88, 0, 230);
+            -webkit-box-shadow: 0 0 8px rgb(88, 0, 230);
+            -moz-box-shadow: 0 0 8px rgb(88, 0, 230);
+            -ms-box-shadow: 0 0 8px rgb(88, 0, 230);
+            -o-box-shadow: 0 0 8px rgb(88, 0, 230);*/
+    }
+    .second-situational .tooltip-situational,
+    .second-situational-10-20 .tooltip-situational-10-20,
+    .third-situational .tooltip-situational,
+    .third-situational-10-20 .tooltip-situational-10-20{
+        bottom:100%;
+        margin-bottom:-85px;
+    }
+    
+    .build-1 .tooltip-situational-10-20{
+        background-image: url(imgs/hero-storm-stone.jpg) !important;
+        background-position: center center !important;
+        background-size: cover !important;
+        border: 2px solid #32ac49 !important;
+        box-shadow: 0 0 10px #5bc66e,
+            inset 0 0 10px #5bc66e !important;
+    }
+    
+    
+    
+    .tooltip-situational h4,
+    .tooltip-situational-10-20 h4{
+        margin-bottom: 5px !important;
+        color: #32ac49;
+        font-size: 20px;
+        font-weight: 800;
+        font-style: italic;
+        font-family: Metronic,Arial,sans-serif;
+        text-align: left;
+    }
+    .build-1 .tooltip-situational-10-20 h4{
+        color:#32ac49;
+        font-weight: 900;
+        text-shadow: 0 0 8px #009cff;
+    }
+    .tooltip-text-situational,
+    .tooltip-text-situational-10-20{
+        color: #fff;
+        font-size:17px;
+        font-weight: 800;
+        font-style: italic;
+        font-family: Metronic,Arial,sans-serif;
+        text-align: left !important;
+    }
+    .tooltip-text-situational-10-20{
+        color:#fff;
+        text-shadow: 0 0 13px #009cff;
+    }
+    .heroes-build-talent-tier-situational:hover .tooltip-situational,
+    .heroes-build-talent-tier-situational:hover .tooltip-situational-10-20 {
+        opacity: 1;
+        pointer-events: auto;
+        -webkit-transform: translateY(0px);
+          -moz-transform: translateY(0px);
+          -ms-transform: translateY(0px);
+           -o-transform: translateY(0px);
+            transform: translateY(0px);
+    }
+    
+    
+    /* ---------- Build-2 Situational ----------- */ 
+    .build-2 .tooltip-situational{
+        border: 2px solid #3291c6;
+    }
+    .build-2 .tooltip-situational-10-20{
+        background-image: url(imgs/hero-storm-stone.jpg) !important;
+        background-position: center center !important;
+        background-size: cover !important;
+        border: 2px solid #3291c6 !important;
+        box-shadow: 0 0 10px #3c93bf,
+            inset 0 0 10px #3c93bf !important;
+    }
+    .build-2 .tooltip-situational h4{
+        color:#3291c6;
+        font-style: italic;
+        font-weight: 800;
+        font-family: Metronic,Arial,sans-serif;
+    }
+    .build-2 .tooltip-situational-10-20 h4{
+        color:#3291c6;
+        font-weight: 900;
+        text-shadow: 0 0 8px #009cff;
+    }
+    /* ---------- Build-2 Situational End ---------- */
+    
+    /* ---------- Build-3 Situational ----------- */ 
+    .build-3 .tooltip-situational{
+        border: 2px solid #bd0541;
+    }
+    .build-3 .tooltip-situational-10-20{
+        background-image: url(imgs/hero-storm-stone.jpg) !important;
+        background-position: center center !important;
+        background-size: cover !important;
+        border: 2px solid #bd0541 !important;
+        box-shadow: 0 0 10px #fc6790,
+            inset 0 0 10px #fc6790 !important;
+    }
+    .build-3 .tooltip-situational h4{
+        color:#bd0541;
+        font-style: italic;
+        font-weight: 800;
+        font-family: Metronic,Arial,sans-serif;
+    }
+    .build-3 .tooltip-situational-10-20 h4{
+        color:#bd0541;
+        font-weight: 900;
+        text-shadow: 0 0 8px #009cff;
+    }
+
+    /* ---------- Build-3 Situational End ---------- */
+    
+    
+    /* ---------- Build-4 Situational ----------- */ 
+    .build-4 .tooltip-situational{
+        border: 2px solid #b6b009;
+    }
+    .build-4 .tooltip-situational-10-20{
+        background-image: url(imgs/hero-storm-stone.jpg) !important;
+        background-position: center center !important;
+        background-size: cover !important;
+        border: 2px solid #b6b009 !important;
+        box-shadow: 0 0 10px #fefc83,
+            inset 0 0 10px #fefc83 !important;
+    }
+    .build-4 .tooltip-situational h4{
+        color:#b6b009;
+        font-style: italic;
+        font-weight: 800;
+        font-family: Metronic,Arial,sans-serif;
+    }
+    .build-4 .tooltip-situational-10-20 h4{
+        color:#b6b009;
+        font-weight: 900;
+        text-shadow: 0 0 8px #009cff;
+    }
+    /* ---------- Build-4 Situational End ---------- */
+    
+    
+    
+    /* ---------- Build Passives ---------- */
+    /* ---------- Build-1 Passive ---------- */
+    .build-1 .passive{
+        color:#32ac49;
+        font-style: italic;
+        font-size: 22px;
+        font-family: Metronic,Arial,sans-serif;
+    }
+    /* ---------- Build-2 Passive ---------- */
+    .build-2 .passive{
+        color:#3291c6;
+        font-style: italic;
+        font-size: 22px;
+        font-family: Metronic,Arial,sans-serif;
+    }
+    /* ---------- Build-3 Passive ---------- */
+    .build-3 .passive{
+        color:#bd0541;
+        font-style: italic;
+        font-size: 22px;
+        font-family: Metronic,Arial,sans-serif;
+    }
+    /* ---------- Build-4 Passive ---------- */
+    .build-4 .passive{
+        color:#b6b009;
+        font-style: italic;
+        font-size: 22px;
+        font-family: Metronic,Arial,sans-serif;
+    }
+    /* ---------- Build Passives End ---------- */
+
+
+    /* ---------- Coming Soon / New ---------- */
+    .coming-soon{
+        position: absolute;
+        margin-left:45px;
+        margin-top:23px;
+        color:#fff;
+        text-align: center;
+        font-weight: 700 !important;
+        font-family: Metronic,Arial,sans-serif !important;
+        letter-spacing: 1px;
+        background-color: rgb(220, 29, 61);
+        border-radius: 0 10px 0 10px;
+        border: 1px solid #000;
+        -webkit-box-shadow: 0 0 8px 1px rgba(0,0,0,.50);
+        box-shadow: 0 0 8px 1px rgba(0,0,0,.50);
+        width: 60px;
+        height: 25px;
+        z-index: 1;
+        transition: 0.3s;
+    }
+    .upcoming{
+        opacity:0.4;
+    }
+/* ---------- Coming Soon / New ---------- */    
+}
+
